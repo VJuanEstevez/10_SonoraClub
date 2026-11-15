@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#0a0a0b" />
+  <path d="M14 48 50 16" stroke="#d8ff4b" stroke-width="4" />
+  <text
+    x="31"
+    y="45"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="32"
+    font-weight="900"
+    fill="#f3efe6"
+  >
+    S
+  </text>
+</svg>
