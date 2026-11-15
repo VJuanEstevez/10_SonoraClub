@@ -1,0 +1,116 @@
+@layer reset, tokens, base, layout, components, sections, utilities;
+
+@font-face {
+  font-family: "Anton";
+  src: url("./fonts/anton-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("./fonts/anton-latin-ext.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("./fonts/archivo-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-stretch: 100%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("./fonts/archivo-latin-ext.woff2") format("woff2");
+  font-weight: 400 700;
+  font-stretch: 100%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("./fonts/space-mono-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("./fonts/space-mono-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer tokens {
+  :root {
+    color-scheme: dark;
+
+    --ink: #0a0a0b;
+    --ink-raised: #121214;
+    --ink-soft: #19191c;
+    --ivory: #f3efe6;
+    --sand: #b8b1a2;
+    --acid: #d8ff4b;
+    --ember: #ff5a36;
+
+    --line: color-mix(in srgb, var(--ivory) 14%, transparent);
+    --line-strong: color-mix(in srgb, var(--ivory) 26%, transparent);
+
+    --font-display: "Anton", "Arial Narrow", system-ui, sans-serif;
+    --font-sans: "Archivo", system-ui, -apple-system, sans-serif;
+    --font-mono: "Space Mono", ui-monospace, "SF Mono", monospace;
+
+    --step--1: clamp(0.7rem, 0.67rem + 0.12vw, 0.78rem);
+    --step-0: clamp(0.95rem, 0.9rem + 0.22vw, 1.06rem);
+    --step-1: clamp(1.1rem, 1.02rem + 0.35vw, 1.3rem);
+    --step-2: clamp(1.45rem, 1.2rem + 1vw, 1.9rem);
+    --step-3: clamp(1.9rem, 1.45rem + 1.9vw, 2.9rem);
+    --step-4: clamp(2.5rem, 1.7rem + 3.4vw, 4.6rem);
+    --step-5: clamp(3rem, 1.4rem + 6.6vw, 8rem);
+    --step-6: clamp(4.2rem, 0.5rem + 15vw, 16rem);
+
+    --space-3xs: 0.25rem;
+    --space-2xs: 0.5rem;
+    --space-xs: 0.75rem;
+    --space-s: 1rem;
+    --space-m: 1.5rem;
+    --space-l: clamp(2rem, 1.4rem + 2vw, 3rem);
+    --space-xl: clamp(3rem, 2rem + 4vw, 5rem);
+    --space-2xl: clamp(4.5rem, 3rem + 6vw, 8rem);
+    --section-space: clamp(5rem, 3.5rem + 7vw, 10rem);
+
+    --container: 78rem;
+    --gutter: clamp(1.25rem, 0.4rem + 3.4vw, 4rem);
+    --header-height: 4.5rem;
+
+    --radius-s: 0.125rem;
+    --radius-m: 0.375rem;
+    --radius-pill: 100vmax;
+
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --dur: 420ms;
+  }
+}
